@@ -1,4 +1,11 @@
-﻿Console.Write("Введите количество строк: ");
+﻿// Задача 47. Задайте двумерный массив размером m×n, заполненный случайными вещественными числами.
+
+// m = 3, n = 4.
+// 0,5 7 -2 -0,2
+// 1 -3,3 8 -9,9
+// 8 7,8 -7,1 9
+
+Console.Write("Введите количество строк: ");
 int rows = Convert.ToInt32(Console.ReadLine());
 
 Console.Write("Введите количество столбцов: ");
@@ -20,12 +27,7 @@ for (int j = 0; j < n; j++) // matrix.GetLength(1) = n - столбцы
 return arr;
 }
 
-PrintMatrix(array2D);  // inputMatrix = array2D
-// Console.WriteLine("Вывод матрицы  2 на 2 для теста: ");
-// PrintMatrix(testMatrix); // inputMatrix = testMatrix
-// Console.WriteLine("Вывод матрицы  3 на 3 для теста: ");
-// PrintMatrix(secondTestMatrix); // inputMatrix = secondTestMatrix
-// Печатаем двумерный массив на экран
+PrintMatrix(array2D); 
 void PrintMatrix(double[,] inputMatrix)
 {
     for (int i = 0; i < inputMatrix.GetLength(0); i++) // строчки
